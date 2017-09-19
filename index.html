@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>JQuery Add Functionality With Plugins</title>
+<style>
+  .pics {
+    height: 232px;
+    width: 232px;
+    padding: 0;
+    margin: 0;
+  }
+  .pics img {
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+  }
+</style>
+</head>
+<body>
+<div class="pics">
+  <img src="images/beach1.jpg">
+  <img src="images/beach2.jpg">
+  <img src="images/beach3.jpg">
+</div>
+
+<script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/JavaScript" src="js/jquery.cycle.all.js"></script>
+<script type="text/Javascript">
+(function($) {
+  $(document).ready(function() {
+    $('.pics').cycle('fade');
+  });
+})(jQuery);
+
+</script>
+</body>
+</html>
